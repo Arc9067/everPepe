@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024) -->
+<html lang="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      meta=""
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Ever Pepe</title>
+    <link href="js/chunk-5fcb5960.b7d309b4.js" rel="prefetch" />
+    <link href="./mm/chunk-688879f7.94b72677.js" rel="prefetch" />
+    <link href="./mm/app.af11efb2.css" rel="preload" as="style" />
+    <link
+      href="./mm/chunk-vendors.3d466505.css"
+      rel="preload"
+      as="style"
+    />
+    <link href="./mm/app.972adeb1.js" rel="preload" as="script" />
+    <link
+      href="./mm/chunk-vendors.fe7f186e.js"
+      rel="preload"
+      as="script"
+    />
+    <link href="./chunk-vendors.3d466505.css" rel="stylesheet" />
+    <link href="./app.af11efb2.css" rel="stylesheet" />
+    <style>
+      .vue-notification-group {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+      }
+      .vue-notification-wrapper {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .notification-title {
+        font-weight: 600;
+      }
+      .vue-notification-template {
+        display: block;
+        box-sizing: border-box;
+        background: white;
+        text-align: left;
+      }
+      .vue-notification {
+        display: block;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: 12px;
+        padding: 10px;
+        margin: 0 5px 5px;
+        color: #fff;
+        background: red;
+        border-left: 5px solid #187fe7;
+      }
+      .vue-notification.warn {
+        background: #ffb648;
+        border-left-color: #f48a06;
+      }
+      .vue-notification.error {
+        background: #e54d42;
+        border-left-color: #b82e24;
+      }
+      .vue-notification.success {
+        background: #68cd86;
+        border-left-color: #42a85f;
+      }
+      .vn-fade-enter-active,
+      .vn-fade-leave-active,
+      .vn-fade-move {
+        transition: all 0.5s;
+      }
+      .vn-fade-enter-from,
+      .vn-fade-leave-to {
+        opacity: 0;
+      }
+    </style>
+    <script charset="utf-8" src="./chunk-688879f7.94b72677.js"></script>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1113.0"
+    data-gr-ext-installed=""
+    cz-shortcut-listen="true"
+  >
+    <noscript
+      ><strong
+        >We're sorry but evermoon doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app" data-v-app="">
+      <div>
+        <div>
+          <nav class="fixed top-0 w-full z-50 bg-transparent">
+            <div class="flex items-center justify-between py-3 px-6 w-full">
+              <a href="" class="h-12 md:h-16"
+                ><img
+                  src="./logo.png"
+                  alt=""
+                  class="w-full h-full object-contain"
+              /></a>
+              <div
+                class="xl:flex items-center gap-7 hidden text-white relative z-3"
+              >
+                <div>
+                  <a
+                    aria-current="page"
+                    href=""
+                    class="router-link-active router-link-exact-active font-medium text-active font-bold"
+                    exact=""
+                    >Home</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    aria-current="page"
+                    href="#tokenomics"
+                    class="router-link-active router-link-exact-active font-medium"
+                    exact=""
+                    >Tokenomics</a
+                  >
+                </div>
+              </div>
+              <div
+                class="md:flex hidden items-center ml-auto mr-10 lg:mr-0 lg:ml-0 gap-5"
+              >
+                <a
+                  href=""
+                  target="_blank"
+                  class="button font-bold text-base cursor-pointer whitespace-nowrap flex justify-between bg-main text-white text-xs px-4 py-2"
+                  ><h1>Buy $EVERPEPE</h1>
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.5 19.5L19.5 6.5M19.5 6.5V18.98M19.5 6.5H7.02"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path></svg
+                ></a>
+              </div>
+              <div class="flex xl:hidden">
+                <button>
+                  <img src="menu.svg" alt="" class="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+            <div
+              class="fixed top-0 inset-x-0 transition transform origin-top xl:hidden z-50"
+              style="display: none"
+            >
+              <div
+                class="rounded-lg shadow-md bg-content overflow-hidden px-6 py-3"
+              >
+                <div class="flex items-center justify-between">
+                  <a href="" class="h-12"
+                    ><img
+                      src="logo.png"
+                      alt=""
+                      class="w-full h-full object-contain" /></a
+                  ><button>
+                    <img src="menu.svg" alt="" class="h-5 w-5" />
+                  </button>
+                </div>
+                <div class="flex flex-col gap-3 text-white mt-3">
+                  <div>
+                    <a
+                      aria-current="page"
+                      href=""
+                      class="router-link-active router-link-exact-active font-medium text-active font-bold"
+                      exact=""
+                      >Home</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      aria-current="page"
+                      href="#about"
+                      class="router-link-active router-link-exact-active font-medium"
+                      exact=""
+                      >About</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      aria-current="page"
+                      href="#community"
+                      class="router-link-active router-link-exact-active font-medium"
+                      exact=""
+                      >Community</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      aria-current="page"
+                      href="#tokenomics"
+                      class="router-link-active router-link-exact-active font-medium"
+                      exact=""
+                      >Tokenomics</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      aria-current="page"
+                      href="#buy"
+                      class="router-link-active router-link-exact-active font-medium"
+                      exact=""
+                      >Buy</a
+                    >
+                  </div>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="button font-bold text-base cursor-pointer whitespace-nowrap flex justify-between bg-main text-white text-xs px-4 py-2"
+                    ><h1>Buy $EVERPEPE</h1>
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 19.5L19.5 6.5M19.5 6.5V18.98M19.5 6.5H7.02"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="relative flex items-center flex-col h-screen md:hero-min-height bg-hero bg-cover overflow-hidden"
+          >
+            <div
+              class="relative w-full flex flex-col items-start justify-center h-screen md:hero-min-height max-w-8xl lg:max-w-7xl md:max-w-4xl mx-auto z-3 px-6 md:px-16"
+            >
+              <div
+                class="flex flex-col content-block text-white w-full relative w-full max-w-5xl content-block--transparent items-start"
+              >
+                <!---->
+                <div class="flex flex-col items-start">
+                  <!---->
+                  <h1
+                    class="text-active uppercase font-bold text-4xl md:text-5xl xl:text-9xl"
+                  >
+                    WELCOME TO EVERPEPE
+                  </h1>
+                  <!---->
+                </div>
+                <p class="text-main-white -mt-5 text-opacity-70 text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime velit animi aperiam quaerat minus? Ipsam molestias
+                  consequatur, minima cupiditate voluptatum blanditiis non quam
+                  eos quidem nulla sapiente fuga error excepturi?
+                </p>
+                <div
+                  class="flex flex-col md:flex-row items-center gap-5 w-full sm:w-1/2 lg:w-2/3 xl:w-2/4"
+                >
+                  <a
+                    href=""
+                    target="_blank"
+                    class="button font-bold text-base cursor-pointer whitespace-nowrap flex justify-between bg-main text-white text-xs px-7 py-4 w-full"
+                    ><h1>Buy $EVERPEPE</h1>
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 19.5L19.5 6.5M19.5 6.5V18.98M19.5 6.5H7.02"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <img
+              src="logo.png"
+              class="absolute bottom-56 right-0 md:w-1/3 z-2 float opacity-30 md:opacity-50"
+              alt=""
+            /><img
+              src="hero-moon.svg"
+              class="absolute bottom-0 right-0 z-1 earth-ping"
+              alt=""
+            /><img
+              src="hero-shadow-effect.svg"
+              class="absolute bottom-0 right-0 z-0"
+              alt=""
+            />
+            <div
+              class="w-full py-5 px-10 absolute bottom-0 text-white bg-content z-10"
+            >
+              <div
+                class="mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl flex flex-col-reverse gap-5 md:flex-row items-center justify-between"
+              >
+                <div class="flex items-center gap-9">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="button font-bold text-base cursor-pointer whitespace-nowrap flex justify-between text-xs px-4 py-2 bg-transparent border border-active text-active"
+                    ><h1>View Live Chart</h1>
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 19.5L19.5 6.5M19.5 6.5V18.98M19.5 6.5H7.02"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a
+                  ><a href="" target="_blank"
+                    ><img src="./telegram.svg" alt="" /></a
+                  ><a href="" target="_blank"
+                    ><img src="twitter.svg" alt=""
+                  /></a>
+                </div>
+                <p>
+                  $EVERPOEPE Contract Address:
+                  <span class="break-all xl:text-left text-center"
+                    ><span class="relative ml-1.5">0x000000...</span
+                    ><button class="ml-3 top-1.5 relative">
+                      <svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.6001 11.897C6.6001 9.17101 6.6001 7.80801 7.4431 6.96101C8.2871 6.11401 9.6441 6.11401 12.3601 6.11401H15.2401C17.9551 6.11401 19.3121 6.11401 20.1561 6.96101C21.0001 7.80801 21.0001 9.17101 21.0001 11.897V16.717C21.0001 19.443 21.0001 20.806 20.1561 21.653C19.3131 22.5 17.9551 22.5 15.2401 22.5H12.3601C9.6441 22.5 8.2871 22.5 7.4431 21.653C6.6001 20.806 6.6001 19.443 6.6001 16.717V11.897Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          opacity="0.5"
+                          d="M4.172 3.672C3 4.843 3 6.729 3 10.5V12.5C3 16.271 3 18.157 4.172 19.328C4.789 19.946 5.605 20.238 6.792 20.376C6.6 19.536 6.6 18.38 6.6 16.716V11.897C6.6 9.171 6.6 7.808 7.443 6.961C8.287 6.114 9.644 6.114 12.36 6.114H15.24C16.892 6.114 18.04 6.114 18.878 6.304C18.74 5.111 18.448 4.292 17.828 3.672C16.657 2.5 14.771 2.5 11 2.5C7.229 2.5 5.343 2.5 4.172 3.672Z"
+                          fill="white"
+                        ></path>
+                      </svg></button
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="tokenomics"
+            class="flex flex-col relative w-full py-10 lg:py-20 overflow-hidden px-7 bg-content-2 h-full"
+          >
+            <div class="w-full mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl">
+              <div
+                class="flex flex-col content-block text-white w-full relative content-block--transparent items-center"
+              >
+                <!---->
+                <div class="flex flex-col items-center">
+                  <h1
+                    class="text-active uppercase font-bold md:text-5xl text-2xl"
+                  >
+                    Tokenomics
+                  </h1>
+                  <h2
+                    class="text-active text-opacity-50 md:text-lg text-sm uppercase"
+                  ></h2>
+                </div>
+              </div>
+              <div
+                class="flex flex-row flex-wrap gap-5 items-center justify-center relative w-full h-full md:mt-36 mt-20"
+              >
+                <img
+                  src="north-star.svg"
+                  class="absolute top-0 right-5 left-5"
+                  alt=""
+                />
+                <div
+                  class="flex flex-col items-start content-block content-block--token content-block--gradient text-white max-w-md z-2 lg:absolute lg:-top-16"
+                >
+                  <!-- <img src="coin.svg" alt="" /> -->
+                  <h1 class="text-active text-xl uppercase">0% Tax</h1>
+                  <!-- <p class="text-main-white font-medium text-opacity-40">
+                    1% of each transaction will be used to buyback the token,
+                    and highlight the team's long term vision of EverMoon.
+                  </p> -->
+                </div>
+                <div
+                  class="flex flex-col items-start content-block content-block--token content-block--gradient text-white max-w-md z-2 lg:absolute lg:-left-12"
+                >
+                  <img src="./coin.svg" alt="" />
+                  <h1 class="text-active text-xl uppercase">5% Max Wallet</h1>
+                  <!-- <p class="text-main-white font-medium text-opacity-40">
+                    1% of each transaction will be used to market the project,
+                    and enhance all marketing efforts.
+                  </p> -->
+                </div>
+                <div
+                  class="flex flex-col items-start content-block content-block--token content-block--gradient text-white max-w-md z-2 lg:absolute lg:-right-12"
+                >
+                  <img src="./coin.svg" alt="" />
+                  <h1 class="text-active text-xl uppercase">2% Max Buy</h1>
+                </div>
+                <div
+                  class="flex flex-col items-center content-block content-block--token content-block--gradient text-white max-w-md z-2 lg:absolute lg:-bottom-16 left-32"
+                >
+                  <img src="./coin.svg" alt="" />
+                  <h1 class="text-active text-xl uppercase">
+                    100,000,000 Supply
+                  </h1>
+                </div>
+
+                <img
+                  src="./mm/tokenomics.svg"
+                  class="earth-spin"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <footer
+            class="bg-dark flex xl:flex-row flex-col items-center justify-between w-full py-5 px-6 gap-5 bg-content text-active footer"
+          >
+            <a href="" class="h-12"
+              ><img
+                src="./logo.png"
+                alt=""
+                class="w-full h-full object-contain"
+            /></a>
+            <div class="flex items-center gap-7 text-white relative z-3">
+              <div>
+                <a
+                  aria-current="page"
+                  href=""
+                  class="router-link-active router-link-exact-active font-medium text-active font-bold"
+                  exact=""
+                  >Home</a
+                >
+              </div>
+
+              <div>
+                <a
+                  aria-current="page"
+                  href="#tokenomics"
+                  class="router-link-active router-link-exact-active font-medium"
+                  exact=""
+                  >Tokenomics</a
+                >
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div
+          class="vue-notification-group"
+          style="width: 300px; top: 0px; right: 0px"
+        >
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"
+    ><template shadowrootmode="open"
+      ><style>
+        div.grammarly-desktop-integration {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        div.grammarly-desktop-integration:before {
+          content: attr(data-content);
+        }
+      </style>
+      <div
+        aria-label="grammarly-integration"
+        role="group"
+        tabindex="-1"
+        class="grammarly-desktop-integration"
+        data-content='{"mode":"full","isActive":true,"isUserDisabled":false}'
+      ></div></template
+  ></grammarly-desktop-integration>
+</html>
